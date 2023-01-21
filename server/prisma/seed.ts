@@ -24,14 +24,13 @@ async function run() {
         id: firstHabitId,
         title: 'Beber 2L água',
         created_at: firstHabitCreationDate,
-        // weekDays: {
-        //   create: [
-        //     { week_day: 1 },
-        //     { week_day: 2 },
-        //     { week_day: 3 },
-        //   ]
-        // }
-        
+        weekDays: {
+          create: [
+            { week_day: 1 },
+            { week_day: 2 },
+            { week_day: 3 },
+          ]
+        }
       }
     }),
 
@@ -40,13 +39,13 @@ async function run() {
         id: secondHabitId,
         title: 'Exercitar',
         created_at: secondHabitCreationDate,
-        // weekDays: {
-        //   create: [
-        //     { week_day: 3 },
-        //     { week_day: 4 },
-        //     { week_day: 5 },
-        //   ]
-        // }
+        weekDays: {
+          create: [
+            { week_day: 3 },
+            { week_day: 4 },
+            { week_day: 5 },
+          ]
+        }
       }
     }),
 
@@ -55,15 +54,15 @@ async function run() {
         id: thirdHabitId,
         title: 'Dormir 8h',
         created_at: thirdHabitCreationDate,
-        // weekDays: {
-        //   create: [
-        //     { week_day: 1 },
-        //     { week_day: 2 },
-        //     { week_day: 3 },
-        //     { week_day: 4 },
-        //     { week_day: 5 },
-        //   ]
-        // }
+        weekDays: {
+          create: [
+            { week_day: 1 },
+            { week_day: 2 },
+            { week_day: 3 },
+            { week_day: 4 },
+            { week_day: 5 },
+          ]
+        }
       }
     })
   ])
@@ -76,11 +75,11 @@ async function run() {
       data: {
         /** Monday */
         date: new Date('2023-01-02T03:00:00.000z'),
-        // dayHabits: {
-        //   create: {
-        //     habit_id: firstHabitId,
-        //   }
-        // }
+        dayHabits: {
+          create: {
+            habit_id: firstHabitId,
+          }
+        }
       }
     }),
 
@@ -91,11 +90,11 @@ async function run() {
       data: {
         /** Friday */
         date: new Date('2023-01-06T03:00:00.000z'),
-        // dayHabits: {
-        //   create: {
-        //     habit_id: firstHabitId,
-        //   }
-        // }
+        dayHabits: {
+          create: {
+            habit_id: firstHabitId,
+          }
+        }
       }
     }),
 
@@ -106,12 +105,12 @@ async function run() {
       data: {
         /** Wednesday */
         date: new Date('2023-01-04T03:00:00.000z'),
-        // dayHabits: {
-        //   create: [
-        //     { habit_id: firstHabitId },
-        //     { habit_id: secondHabitId },
-        //   ]
-        // }
+        dayHabits: {
+          create: [
+            { habit_id: firstHabitId },
+            { habit_id: secondHabitId },
+          ]
+        }
       }
     }),
   ])
