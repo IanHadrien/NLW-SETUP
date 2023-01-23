@@ -1,6 +1,7 @@
 import { Header } from './components/Header';
 import { SummayTable } from './components/SummayTable';
 import './styles/global.css';
+import './lib/dayjs.ts'
 
 // import { Habit } from "./components/Habit"
 
